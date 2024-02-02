@@ -322,7 +322,7 @@ fn main() -> Result<(), &'static str> {
     let mut args = std::env::args();
     let prg = args.next().unwrap();
     let Some(s) = args.next() else {
-        eprintln!("usage: {} \"comma,separated,string\"", prg);
+        eprintln!("Usage: {} \"Com,ma,Sep,ara,ted,Str,ing,taCd,Cdeg,Cdeg,gimn,imno,inop,oprS,prSt\"", prg);
         return Ok(());
     };
     let board = { //{{{
@@ -356,7 +356,7 @@ fn main() -> Result<(), &'static str> {
     }
     let w = sln.len().ilog10() as usize + 1;
     for (i, (a, b)) in sln.into_iter().enumerate() {
-        println!("[{:3$}] #{:<4$} \u{2015}\u{2015}\u{2192} #{:<4$}",
+        println!("[{:3$}] #{:<4$} \u{2192} #{:<4$}",
             i + 1, a + 1, b + 1,
             w, board.len().ilog10() as usize + 1,
         );
