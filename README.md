@@ -18,3 +18,6 @@ Output:
 [8] #5 ――→ #2
 [9] #4 ――→ #5
 ```
+
+## License
+[WTFPL](http://www.wtfpl.net/txt/copying)
